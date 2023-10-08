@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.teste.MainActivity"
+    android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="564dp"
+        android:layout_height="364dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" >
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="462dp"
+        android:layout_height="144dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="230dp"
+        android:background="#E4F7FA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textLong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:padding="9dp"
+            android:text="nada"
+            android:textSize="20sp"
+            />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="460dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="239dp"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:text="Deseja sair do aplicativo?"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="19dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sim" />
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="19dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Não" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textTop"
+        android:layout_width="464dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="265dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text=""
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
